@@ -3,33 +3,33 @@
 /**
  * APNS推送消息类
  * 
- * @author   pengmeng<pengmeng@staff.sina.com.cn>
+ * @author  renhai<renhai@staff.sina.com.cn>
  * @date     2014-12-25
  * @version  1.0
  */
 /* 
 //使用示例:
-$push = new IOS_Push();
+$push = new Push();
 $push->setIsSandBox(true)
 	->setLocalcert('xxxx.pem')
 	->setPassphrase('passwrord')
 	->connect();
 if ($push->isSuccess()) {
 	//单发
-	$push->setDeviceToken('w9mur0987ctr29n84c87ctw9mur0987r29b')
+	$push->setDeviceToken('w9mur0987ctr2987ctw9mur0987r29bxxx')
 		->push('hello1');
 	if (!$push->isSuccess()) {
 		echo $push->error();
 	}
 	//单发
-	$push->setDeviceToken('ctr29n84c87cw9mur0987tw9mur0987r29b')
+	$push->setDeviceToken('ctr29n84w9mur0987tw9mur0987r29bxxx')
 		->push('hello2');
 	if (!$push->isSuccess()) {
 		echo $push->error();
 	}
 	//群发
-	$push->setDeviceToken(array('ctr29n84c87cw9mur0987tw9mur0987r29b',
-		    'w9mur0987ctr29n84c87ctw9mur0987r29b'
+	$push->setDeviceToken(array('ctr29n8mur0987tw9mur0987r29bxxx',
+		    'w9mur0987ctr29n84c87ctw9mu7r29xxxx'
 		))->push('hello3');
 	if (!$push->isSuccess()) {
 		echo $push->error();
@@ -39,7 +39,7 @@ if ($push->isSuccess()) {
 }
 $push->disconnect();
 */
-class IOS_Push {
+class Push {
 
 	//错误信息
 	private $error = array();
