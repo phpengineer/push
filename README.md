@@ -1,2 +1,2 @@
 # push
-push messge of server
+push messge
